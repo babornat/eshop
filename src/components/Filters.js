@@ -76,7 +76,7 @@ console.log(byStock, byFastDelivery, sort, byRating);
         />
       </span>
       <span>
-        <label style={{ paddingRight: 10 }}>Rating: </label>
+        <label style={{ paddingRight: 10, marginTop:10 }}>Rating: </label>
         <Rating  rating={byRating} 
           onClick={(i) =>
             productDispatch({

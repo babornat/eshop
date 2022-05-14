@@ -58,25 +58,7 @@ const Cart = () => {
                   
                             </Col>
 
-                            <Col md={2}>
-                  <Form.Control
-                    as="select"
-                    value={prod.qty}
-                    onChange={(e) =>
-                      dispatch({
-                        type: "CHANGE_CART_QTY",
-                        payload: {
-                          id: prod.id,
-                          qty: e.target.value,
-                        },
-                      })
-                    }
-                  >
-                    {[...Array(prod.inStock).keys()].map((x) => (
-                      <option key={x + 1}>{x + 1}</option>
-                    ))}
-                  </Form.Control>
-                </Col>
+                           
 
                             <Col md={2}>
                   <Button
@@ -102,17 +84,17 @@ const Cart = () => {
             
         </div>
         <Link to="/">
-                    <Button variant="danger"  style={{ width: "95%", margin: "0 10px", marginTop:"15px",
+                    <Button variant="danger"  style={{ width: "95%", margin: "0 10px", marginTop:"25px",
                     marginRight: "50px"
                 } }>
                       Shop
                     </Button>
                   </Link>
 
-        <div className="filters summary">
-<span className="title">Subtotal {cart.length} items</span>
-<span style={{ fontWeight: 700, fontSize: 20 }}>Total: CZK {total}</span>
-        <Button type="button" disabled={cart.length === 0}>
+        <div  className="summary2">
+<span  className="title">Subtotal {cart.length} items</span>
+<span   style={{ fontWeight: 700, fontSize: 20, marginBlock:30}}>Total: CZK {total}</span>
+        <Button  type="button" disabled={cart.length === 0}>
           Proceed to Checkout
         </Button>
         </div>

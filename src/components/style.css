@@ -37,18 +37,29 @@
   }
   
   .filters {
-    background-color: #09ca50;
+    background-color: #343a40;
     color: white;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 20%;
+    margin: 10px;
+    height: 86vh;
+  }
+
+  .summary2 {
+    background-color: #343a40;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
     margin: 10px;
     height: 86vh;
   }
   
   .filters > span {
-    padding-bottom: 20px;
+    padding-bottom: 45px;
   }
   
   .title {
@@ -69,7 +80,7 @@
   }
   
   .summary {
-    width: 30%;
+    width: 20%;
   }
   
   /* Media Queries */
@@ -86,8 +97,11 @@
   
     .title {
       font-size: 18px !important;
+      margin-top:10 ;
     }
   
+    
+
     .productContainer {
       width: 58%;
       padding: 0;
@@ -101,7 +115,5 @@
       width: 100%;
     }
 
-    .navbar{
-      background-color: #013a1f;
-    }
+   
   }
