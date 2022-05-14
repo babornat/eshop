@@ -11,3 +11,4 @@ const Rating =({rating, onClick, style}) =>{
     </>;
 }
 export default Rating
+//34:18

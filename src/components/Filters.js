@@ -79,7 +79,7 @@ const Filters = () => {
       </span>
       <span>
         <label style={{ paddingRight: 10 }}>Rating: </label>
-        <Rating  rating={rate}  style={{ cursor: "pointer" }}
+        <Rating  rating={rate} onClick={(i)=> setRate(i+1)} style={{ cursor: "pointer" }}
       //     onClick={(i) =>
       //       productDispatch({
       //         type: "FILTER_BY_RATING",
