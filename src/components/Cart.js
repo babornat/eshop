@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ListGroup, Button, Row, Col, Form, Image } from "react-bootstrap";
 import { CartState } from "../context/Context";
 import { AiFillDelete } from "react-icons/ai";
+import {Link} from "react-router-dom";
 
 import Rating from "./Rating";
 
@@ -98,7 +99,16 @@ const Cart = () => {
                     ))
                 }
             </ListGroup>
+            
         </div>
+        <Link to="/">
+                    <Button variant="danger"  style={{ width: "95%", margin: "0 10px", marginTop:"15px",
+                    marginRight: "50px"
+                } }>
+                      Shop
+                    </Button>
+                  </Link>
+
         <div className="filters summary">
 <span className="title">Subtotal {cart.length} items</span>
 <span style={{ fontWeight: 700, fontSize: 20 }}>Total: CZK {total}</span>

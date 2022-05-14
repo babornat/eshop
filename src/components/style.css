@@ -5,6 +5,7 @@
     text-align: center;
     font-size: 30px;
     margin: 10px 0;
+    background-color: #013a1f;
   }
   
   .cartitem {
@@ -36,7 +37,7 @@
   }
   
   .filters {
-    background-color: #343a40;
+    background-color: #09ca50;
     color: white;
     padding: 20px;
     display: flex;
@@ -98,5 +99,9 @@
   
     .products {
       width: 100%;
+    }
+
+    .navbar{
+      background-color: #013a1f;
     }
   }
